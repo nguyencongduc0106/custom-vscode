@@ -1,0 +1,67 @@
+{
+  /** ------------ Window Configurations ------------ **/
+  "window.menuBarVisibility": "toggle",
+
+  /** ------------ Workbench Configurations ------------ **/
+  "workbench.colorCustomizations": {
+    "inlineparameters.annotationBackground": "#282A3600",
+    "inlineparameters.annotationForeground": "#7b82af",
+    "scrollbar.shadow": "#000004",
+    "activityBar.foreground": "#e8e890",
+    "activityBar.inactiveForeground": "#dddddd",
+    "activityBarBadge.background": "#e8e890",
+    "activityBarBadge.foreground": "#040404",
+    "tab.activeBackground": "#44475A80",
+    "tab.activeBorder": "default",
+    "tab.activeBorderTop": "#e8e890"
+  },
+  "workbench.colorTheme": "React Theme",
+  "workbench.iconTheme": "dark-minimalist-icons",
+  "workbench.editorLargeFileConfirmation": 10024,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.tree.indent": 16,
+  "workbench.startupEditor": "none",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.statusBar.visible": false,
+
+  /** ------------ Breadcrumbs Configurations ------------ **/
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.symbolPath": "on",
+  "breadcrumbs.filePath": "last",
+
+  /** ------------ Editor Settings ------------ **/
+  "editor.fontFamily": "JetBrains Mono, monospace",
+  "editor.fontSize": 14,
+  "editor.fontWeight": 300,
+  "editor.lineHeight": 26,
+  "editor.lineNumbers": "on",
+  "editor.folding": true,
+  "editor.glyphMargin": true,
+  "editor.guides.indentation": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.cursorStyle": "underline",
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.stickyScroll.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  /** ------------ Terminal Configurations ------------ **/
+  "terminal.integrated.fontFamily": "JetBrains Mono, monospace, monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.enableMultiLinePasteWarning": "always",
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.env.windows": {},
+
+  /** ------------ Additional Configurations ------------ **/
+  "vscode_custom_css.imports": [
+    "file:///D:/Duckiee/custom-vscode/style.css",
+    "file:///D:/Duckiee/custom-vscode/script.js"
+  ],
+  "explorer.compactFolders": false,
+  "console-ninja.featureSet": "Community"
+}

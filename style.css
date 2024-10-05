@@ -1,0 +1,256 @@
+/* Custom variables */
+:root {
+  --accent-color: #e8e890;
+  --blur-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Reset font family */
+.mac,
+.windows,
+.linux {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Custom commmand center */
+.command-center
+  .monaco-toolbar
+  .monaco-action-bar
+  .actions-container
+  .action-item.menu-entry {
+  display: none !important;
+}
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center
+  .action-item.command-center-center {
+  border: none !important;
+  margin-left: 0 !important;
+  background: none !important;
+}
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center
+  .action-item.command-center-center
+  .action-item.command-center-quick-pick
+  .search-icon {
+  display: none !important;
+}
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center
+  .action-item.command-center-center
+  .action-item.command-center-quick-pick
+  .search-label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.monaco-workbench .part.titlebar > .titlebar-container > .titlebar-left {
+  flex-grow: unset !important;
+  width: auto !important;
+}
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center
+  .action-item.command-center-center {
+  width: auto !important;
+}
+
+/* Custom activitybar */
+.monaco-workbench .activitybar > .content {
+  justify-content: center !important;
+}
+.monaco-workbench .activitybar > .content > .composite-bar {
+  margin-bottom: 0px !important;
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label.codicon {
+  border-radius: 12px !important;
+}
+.action-item.checked .active-item-indicator:before {
+  border-left-color: transparent !important;
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item {
+  border-radius: 12px;
+  margin-bottom: 4px;
+  width: 36px;
+  height: 36px;
+  margin-left: 4px;
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label.codicon,
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label:not(.codicon) {
+  width: 36px !important;
+  height: 36px !important;
+}
+li.action-item.icon {
+  border: 2px solid transparent;
+}
+li.action-item.icon:hover {
+  border: 2px solid var(--accent-color);
+}
+li.action-item.icon.checked {
+  border: 2px solid var(--accent-color);
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label:not(.codicon) {
+  padding: 0;
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .badge
+  .badge-content {
+  position: absolute;
+  top: 16px;
+  right: 4px;
+}
+.has-composite-bar
+  .composite-bar-container
+  .composite-bar
+  .monaco-action-bar
+  .actions-container
+  li.action-item.icon.checked {
+  border-left: none;
+  border-right: none;
+}
+
+/* Custom sidebar */
+div#workbench\.parts\.sidebar {
+  height: 100% !important;
+}
+.monaco-tl-twistie {
+  width: 0 !important;
+}
+.codicon-tree-item-expanded:before {
+  content: "" !important;
+}
+.part.sidebar > .composite.title {
+  display: none !important;
+}
+
+/* Custom editor view */
+.split-view-view.visible {
+  box-shadow: 0px 0px 8px var(--blur-color);
+}
+.monaco-editor .sticky-widget {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+.line-numbers {
+  transform: scale(1);
+  transition: all linear;
+}
+.line-numbers.active-line-number {
+  transform: scale(1.2);
+  color: var(--accent-color) !important;
+  animation: 0.2s ease-out scaleSize;
+}
+@keyframes scaleSize {
+  0% {
+    transform: scale(0.75);
+  }
+  100% {
+    color: var(--accent-color);
+    transform: scale(1.25);
+  }
+}
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .editor-actions {
+  display: none !important;
+}
+.monaco-list-rows {
+  background: transparent !important;
+}
+.monaco-list-row:hover {
+  background: var(--blur-color) !important;
+}
+
+/* Custom scrollbar */
+.slider {
+  position: absolute !important;
+  right: 1px !important;
+  width: 4px !important;
+  background: var(--accent-color) !important;
+  left: auto !important;
+  border-radius: 16px !important;
+}
+
+/* Hide decoration ruler */
+.decorationsOverviewRuler,
+.xterm-decoration-overview-ruler {
+  display: none !important;
+}
+
+/* Custom command palette */
+.quick-input-widget {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  padding: 10px !important;
+  border-radius: 12px !important;
+  min-height: 200px !important;
+}
+.quick-input-filter .monaco-inputbox {
+  border-radius: 6px !important;
+  padding: 3px !important;
+  font-size: 14px !important;
+  margin-bottom: 8px !important;
+  background-color: var(--blur-color) !important;
+}
+#command-blur {
+  position: absolute;
+  background: var(--blur-color);
+  backdrop-filter: blur(3px);
+  inset: 0;
+  z-index: 1001;
+}
+
+/* Custom terminal */
+.monaco-workbench .xterm .xterm-scrollable-element {
+  padding-bottom: 12px !important;
+}
+
+/* Custom welcome screen */
+.watermark-box {
+  display: none !important;
+}
