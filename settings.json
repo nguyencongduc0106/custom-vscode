@@ -46,7 +46,8 @@
   "editor.wordWrap": "on",
   "editor.stickyScroll.enabled": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
 
   /** ------------ Terminal Configurations ------------ **/
   "terminal.integrated.fontFamily": "JetBrains Mono, monospace, monospace",
@@ -63,5 +64,8 @@
     "file:///D:/Duckiee/custom-vscode/script.js"
   ],
   "explorer.compactFolders": false,
-  "console-ninja.featureSet": "Community"
+  "console-ninja.featureSet": "Community",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
