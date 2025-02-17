@@ -35,6 +35,7 @@
   "editor.fontSize": 14,
   "editor.fontWeight": 300,
   "editor.lineHeight": 26,
+  "editor.fontLigatures": true,
   "editor.lineNumbers": "on",
   "editor.folding": true,
   "editor.glyphMargin": true,

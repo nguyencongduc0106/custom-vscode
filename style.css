@@ -9,6 +9,7 @@
 .windows,
 .linux {
   font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
 }
 
 /* Custom commmand center */
